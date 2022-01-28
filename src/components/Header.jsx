@@ -1,25 +1,16 @@
 import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import axios from "axios";
+import useAxios from "../hooks/useAxios";
 
 import "./header.css";
 
 const Header = () => {
-  const { query, setQuery, setWeather } = useContext(GlobalContext);
+  const { query, setQuery } = useContext(GlobalContext);
+  const fetchData = useAxios();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    axios
-      .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=441d7523d2a2eace2e634653c4a81709`
-      )
-      .then((res) => {
-        const result = res.data;
-        setWeather(result);
-        setQuery("");
-      })
-      .catch((err) => console.log(err));
+    fetchData();
   };
 
   return (
