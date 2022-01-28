@@ -1,0 +1,20 @@
+header h1 {
+  font-weight: 100;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.heading-forecast {
+  font-weight: 900;
+  font-size: 110%;
+}
+
+input {
+  color: #111;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 200px;
+  padding: 5px;
+}

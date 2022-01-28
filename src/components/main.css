@@ -1,0 +1,37 @@
+main {
+  font-size: 130%;
+}
+
+.container {
+  width: 50%;
+  margin: 60px auto 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  margin: 10px 20px;
+  word-wrap: break-word;
+}
+
+.container.bottom {
+  margin-top: 0;
+}
+
+@media (max-width: 499px) {
+  .section-middle {
+    position: absolute;
+    top: 180px;
+  }
+
+  section {
+    font-size: medium;
+    margin: 20% 30%;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+}
