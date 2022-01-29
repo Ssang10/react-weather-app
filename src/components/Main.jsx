@@ -12,7 +12,9 @@ const Main = () => {
         <>
           <div className="container">
             <section>
-              <h1>{weather.name}</h1>
+              <h1>
+                {weather.name}, {weather.sys.country}
+              </h1>
               <h4>Feels Like {weather.main.feels_like}°</h4>
             </section>
             <section className="section-middle">
