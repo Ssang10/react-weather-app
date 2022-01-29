@@ -11,7 +11,7 @@ main {
 }
 
 section {
-  width: 100%;
+  width: 90%;
   margin: 10px 20px;
   word-wrap: break-word;
 }
@@ -22,16 +22,21 @@ section {
 
 @media (max-width: 499px) {
   .section-middle {
-    position: absolute;
-    top: 180px;
+    position: relative;
+    top: 50px;
   }
 
   section {
-    font-size: medium;
-    margin: 20% 30%;
+    width: 35%;
   }
 
   .container {
     margin-top: 20px;
+    width: 100vw;
+    font-size: medium;
+  }
+
+  .container.bottom {
+    margin-top: 60px;
   }
 }
