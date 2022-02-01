@@ -10,3 +10,49 @@
   height: 100vh;
   color: #fff;
 }
+
+.App.cold {
+  background: rgb(167, 244, 255);
+  background: -moz-linear-gradient(
+    160deg,
+    rgba(167, 244, 255, 1) 0%,
+    rgba(104, 198, 209, 1) 23%,
+    rgba(120, 112, 235, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    160deg,
+    rgba(167, 244, 255, 1) 0%,
+    rgba(104, 198, 209, 1) 23%,
+    rgba(120, 112, 235, 1) 100%
+  );
+  background: linear-gradient(
+    160deg,
+    rgba(167, 244, 255, 1) 0%,
+    rgba(104, 198, 209, 1) 23%,
+    rgba(120, 112, 235, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a7f4ff",endColorstr="#7870eb",GradientType=1);
+}
+
+.App.warm {
+  background: rgb(249, 255, 190);
+  background: -moz-linear-gradient(
+    160deg,
+    rgba(249, 255, 190, 1) 0%,
+    rgba(255, 206, 127, 1) 23%,
+    rgba(255, 82, 82, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    160deg,
+    rgba(249, 255, 190, 1) 0%,
+    rgba(255, 206, 127, 1) 23%,
+    rgba(255, 82, 82, 1) 100%
+  );
+  background: linear-gradient(
+    160deg,
+    rgba(249, 255, 190, 1) 0%,
+    rgba(255, 206, 127, 1) 23%,
+    rgba(255, 82, 82, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9ffbe",endColorstr="#ff5252",GradientType=1);
+}
